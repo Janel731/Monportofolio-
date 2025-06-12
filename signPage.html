@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signPage.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container a-container" id="a-container">
+            <form method="post" action="" class="form" id="a-form">
+                <h2 class="form_title title">S'inscrire</h2>
+               <input  type="text" class="form_input" placeholder="Nom utlisateur">
+               <input  type="email" class="form_input" placeholder="Email">
+               <input  type="password" class="form_input" placeholder="Mot de passe">
+               <button type="submit" class="form_button button submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <div class="container b-container" id="b-container">
+            <form method="post" action="" class="form" id="b-form">
+                <h2 class="form_title title">Connexion</h2>
+              
+               <input  type="email" class="form_input" placeholder="Email">
+               <input  type="password" class="form_input" placeholder="Mot de passe"><a href="" class="form_link">Mot de passe oublié</a>
+               <button type="submit" class="form_button button submit">Connexion</button>
+            </form>
+        </div>
+
+        <div class="switch" id="switch-cnt">
+            <div class="switch_circle"></div>
+            <div class="switch_circle switch_circle--t"></div>
+            <div class="switch_container" id="switch-c1">
+                <h2 class="switch_title title">De Retour!</h2>
+                <p class="switch_description description">Veuillez entrer vos informations pour vous connectez à votre compte</p>
+                <button class="switch_button button switch-btn">Connexion</button>
+            </div>
+
+            <div class="switch_container is-hidden" id="switch-c2">
+                <h2 class="switch_title title">Rejoignez-nous</h2>
+                <p class="switch_description description">Veuillez entrer les informations pour vous créer à votre compte</p>
+                <button class="switch_button button switch-btn">S'inscrire</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="scrpit.js"></script>
+</body>
+</html>

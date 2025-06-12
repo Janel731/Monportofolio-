@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portofolio</title>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg p-3 pb-0 " id="menu">
+     <a class="navbar-brand" style="color: deepskyblue; font-style: oblique;" href="index.html">JCod<span>{ }</span></a>
+     <button class="navbar-toggler"  data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+        <span class="navbar-toggler-icon"></span>
+     </button>
+     
+    
+     <div class="offcanvas offcanvas-start" id="offcanvas">
+         <div class="offcanvas-header">
+             <button class="btn-close btn-close" data-bs-dismiss="offcanvas"></button>
+         </div>
+        
+         <div class="offcanvas-body">
+             <ul class="navbar-nav justify-content-end flex-grow-1 text-center">
+                 <li class="nav-item">
+                     <a href="#" class="nav-link" style="color: rgb(0, 191, 255);">Accueil</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="about.html" class="nav-link">À propos</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#skills-section" class="nav-link anchor-link">Skills</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#mesProjets" class="nav-link anchor-link">Projets</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#friend" class="nav-link anchor-link">Collaborateurs</a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="contact.html" class="nav-link">Contact</a>
+                 </li>
+             </ul>
+          </div>
+      </div>
+  </nav>
+ 
+
+  <header class="mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start" id="desc">
+                
+                    <p>Je suis GUEDEMEY Janel en <strong style="color: deepskyblue;">formation développement Web</strong> </p>
+                        <a href="about.html" class="btn "  style=" background-color: deepskyblue ; color: white; border: none;">About me</a> 
+            </div>
+
+            <div class="col-md-6 text-center" >
+                <div class="bubble-container mx-auto">
+                  <canvas id="canvas" width="250" height="250"></canvas>
+                  <img src="images/Me2.jpg" class="bubble-img " alt="">
+               </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section id="skills-section" class="container">
+    <h1 class="h1 text-center">Mes compétences</h1>
+    <div class=" zoom container mt-5 " >
+        <div class="row text-center g-4">
+            <div class=" col-6 col-md-4 col-lg-4">
+                <div class="progress-item" data-percentage="75">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2" style="color: rgb(252, 199, 41);">HTML</p>
+                </div>
+
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-4">
+        
+                <div class="progress-item" data-percentage="45">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2" style="color: rgb(37, 126, 243);"><i class="fab fa-css3-alt fa-2x"></i></p>
+                </div>
+            </div>
+
+            
+            <div class=" col-6 col-md-4 col-lg-4">
+                <div class="progress-item" data-percentage="15">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2" style="color: rgb(133, 32, 227);"><i class="fab fa-bootstrap fa-2x"></i></p>
+                </div>
+            </div>
+
+            <div class=" col-6 col-md-4 col-lg-4">
+                <div class="progress-item" data-percentage="5">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2" style="color: rgb(81, 184, 81);" ><i class="fab fa-js fa-2x"></i></p>
+                </div>
+            </div>
+
+
+           <div class=" col-6 col-md-4 col-lg-4">
+                <div class="progress-item" data-percentage="0">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2">PHP</p>
+                </div>
+            </div>
+        
+            <div class=" col-6 col-md-4 col-lg-4">
+                <div class="progress-item" data-percentage="0">
+                    <div class="circle">
+                        <span class="value">0%</span>
+                    </div>
+                    <p class="label mt-2">MYSQL</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </section>
+
+  <section class="projects" id="mesProjets">
+    <div class="container p-4" id="proj">
+        <div class="box p-1">
+            <p>Aucun projet pour le moment</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="friends" id="friend">
+    <div class="container p-3">
+        <h1 class="h1 text-center" style="color: rgb(80, 176, 239);">COLLABORATEURS</h1>
+        <div class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner" id="mesImages">
+                <div class="carousel-item active">
+                    <img src="images/Nel.jpg"  class="d-block  " style="object-fit: cover;" alt="">
+                    <div class="desc shadow">
+                        <p class="">BATOSSI Nel</p>
+                    </div>
+                    
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="images/David.jpg"  class="d-block  " style="object-fit: cover;" alt="">
+                    <div class="desc shadow">
+                        <p class="">GOHOUN David</p>
+                    </div>
+                    
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="images/Azaria.jpg"  class="d-block  " style="object-fit: cover;" alt="">
+                    <div class="desc shadow">
+                        <p class="">RODRIGUEZ-VOITAN Cynrod</p>
+                    </div>
+                   
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="images/Rachad.jpg"  class="d-block  " style="object-fit: cover;" alt="">
+                    <div class="desc shadow">
+                        <p class="">SALAMI Rachad</p>
+                    </div>
+                    
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="images/JD-5.jpeg"  class="d-block  " style="object-fit: cover;" alt="">
+                    <div class="desc shadow"> <p class="">KOTO Aubanel</p></div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <hr>
+
+  <div class="container">
+     <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+              <h1 class="h1 text-center">Que pensez vous de nous?</h1>
+              <form action="">
+                 <div class="w-50">
+                   <label class="form-label " for="name">Nom</label>
+                   <input class="form-control" type="text" name="name" id="name">
+                 </div>
+    
+                 <div class="w-50">
+                   <label class="form-label " for="prenom">Prenom</label>
+                   <input class="form-control" type="text" name="prenom" id="prenom">
+                 </div>
+    
+                 <div class="w-50">
+                    <label class="form-label " for="prenom">Email</label>
+                    <input class="form-control" type="email" name="email" id="email">
+                 </div>
+    
+                 <div class="w-50 mb-2">
+                   <label class="form-label " for="message">Commentaire</label>
+                   <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+                 </div>
+    
+                  <button type="submit" class="btn btn-primary">Envoyer</button>
+              </form>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 mt-5">
+            <div>
+                <p class="h4">Vous désirez nous contacter pour nos services?</p>
+                <a href="contact.html" class="btn" style="background-color: dodgerblue;">Nous-contactez <i class="fas fa-arrow-right text-white" ></i></a>
+            </div>
+
+            <div>
+                <h4 class="h4 mt-2">Nous suivre</h4>
+                <p>Inscrirez-vous ou connectez-vous à votre compte pour nous suivre et être informé à chaque fois que nos projets sont présentés sur la plateforme.</p>
+                <a href="signPage.html" class="btn" style="background-color: dodgerblue;">Inscription/connexion <i class="fas fa-arrow-right text-white" ></i></a>
+            </div>
+
+          </div>
+     </div>
+ </div>
+
+ <footer>
+    &copy; Janel GUEDEMEY, Portofolio-2025, Tous droits réservés
+ </footer>
+
+
+ 
+  
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+
+
+    <script src="animate.js"></script>
+    <script src="progress.js"></script>
+    <script src="animation-gsap.js"></script>
+    <script src="nav .js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

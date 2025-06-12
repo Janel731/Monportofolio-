@@ -1,0 +1,262 @@
+@font-face{
+    font-family: 'Allura_script';
+    src: url("/allura_script/Allura_Script.ttf")
+    format('truetype');
+    
+}
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url("/quicksand/Quicksand_Light.otf")
+    format('otf');
+    
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url("/Montserrat/static/Montserrat-Italic.ttf")
+    format('truetype');
+    
+
+}
+
+@font-face{
+    font-family: 'Paul_jackson';
+    src: url("/paul_jackson/Paul Jackson_personal use.ttf")
+    format('truetype');
+    
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url("/Roboto/Roboto-Italic.ttf")
+    format('truetype');
+    
+}
+body{
+    box-sizing: border-box;
+    
+   
+}
+
+#menu{
+    
+    animation: menu ;
+    animation: menu 2s ease-in-out ;
+    
+}
+
+@keyframes menu{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+   
+}
+
+ul li{
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    inset: calc(100% - 2px) 0 0 0;
+    background-color: deepskyblue;
+    scale: 0 1;
+    transition: 0.3s, translate 0s 0.3s;
+}
+
+ul:hover li::before{
+    scale: 1;
+}
+
+ul li:hover::before{
+    translate: 0;
+    transition: 0.3s;
+}
+
+ul:hover li:has(~li:hover)::before{
+    translate: 100% 0;
+    transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+
+ul:hover li:hover ~ li::before{
+    translate: -100% 0;
+    transition: 0.2s 0.2s, scale 0s 0.4s;
+}
+    
+.bubble-container{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bubble-container{
+    
+    animation: bulle 1.5s ease-in-out ;
+    animation-iteration-count: inherit;
+}
+
+@keyframes bulle{
+    from{
+        transform: translateX(150%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+   
+}
+
+.bubble-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 60px rgba
+    
+    (255, 253, 253, 0.882);
+}
+
+#desc{
+    
+    animation: bio 1.5s ease-in-out ;
+    animation-iteration-count: inherit;
+}
+
+@keyframes bio{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+   
+}
+
+#desc p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+}
+
+.container{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.progress-item{
+    display: inline-block;
+    margin: 20px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(#198754 0%  0%, #eee 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 2s linear;
+}
+
+.value{
+    color: rgb(2, 137, 154);
+}
+
+#skills-section{
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+    transition: all 1s ease;
+}
+#skills-section h1{
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 70px;
+    color: deepskyblue;
+    
+}
+
+#proj{
+    background-color: rgb(177, 223, 237);
+    border-radius: 15px;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.box{
+    background-color: rgba(221, 219, 219, 0.693);
+    width: 20vw;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition:1s ;
+}
+
+#mesImages{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(49, 166, 250);
+    width: 100%;
+    height: 30vh;
+    border-radius: 25px;
+}
+
+#mesImages .carousel-item img{
+    transform: translate(-50%);
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    
+    border-radius: 50%;
+    border: solid 3px white;
+    box-shadow: 0 20px 40px 10px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+#mesImages .desc{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform: translate(-50%);
+   
+}
+
+footer{
+    background-color: #353839;
+    height: 25vh;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
